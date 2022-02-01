@@ -4,6 +4,8 @@ const BudgetReducer = (state, action) => {
   switch (action.type) {
     case "ADD":
       return [action.payload, ...state];
+    case "DELETE":
+      return state.filter((i) => i.id !== action.payload);
     default:
       return state;
   }

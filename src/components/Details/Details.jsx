@@ -9,7 +9,7 @@ const Details = ({ title }) => {
   const { total, chartData } = useTransactions(title);
 
   return (
-    <div className="flex flex-col items-center justify-center p-3 rounded-md shadow-sm bg-slate-50 shadow-slate-800">
+    <div className="flex flex-col items-center justify-center order-2 p-3 rounded-md shadow-sm bg-slate-50 shadow-slate-800">
       <div className="text-2xl font-semibold text-slate-600">{title}</div>
       <div
         className={`text-3xl ${
