@@ -1,7 +1,6 @@
 import React from "react";
 import { useContext } from "react";
 import { BudgetContext } from "../../../context/BudgetContext";
-import { MdAttachMoney } from "react-icons/md";
 import { AiFillDelete } from "react-icons/ai";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
@@ -16,7 +15,7 @@ const List = () => {
   };
 
   return (
-    <div className="flex flex-col w-full pt-3 mt-3 overflow-y-scroll text-lg border-t max-h-52 sm:w-8/12 sm:max-w-2xl">
+    <div className="flex flex-col w-full pt-3 mt-3 overflow-y-scroll text-lg border-t max-h-52 sm:w-10/12 sm:max-w-2xl lg:w-full">
       {state.map((i) => (
         <div key={i.id}>
           <div className="flex justify-between py-1 border-b">

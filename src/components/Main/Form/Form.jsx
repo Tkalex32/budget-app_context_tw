@@ -37,7 +37,7 @@ const Form = () => {
     formData.type === "Income" ? incomeCategories : expenseCategories;
 
   return (
-    <div className="px-4 sm:w-8/12 sm:max-w-2xl">
+    <div className="w-full px-4 sm:w-10/12 sm:max-w-2xl md:w-10/12 lg:w-full">
       <form onSubmit={(e) => formSubmitHandler(e)}>
         <div className="flex flex-col">
           <div className="flex flex-col">
